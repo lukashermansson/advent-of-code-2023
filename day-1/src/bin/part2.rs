@@ -79,6 +79,7 @@ zoneight234
         assert_eq!(281, res)
     }
 
+    // was stuck on this case for a bit, was not covered by the demo input so this additional test will test for this overlapping input
     #[test]
     fn more_input() {
         let input = "oneight".to_string();
