@@ -73,9 +73,9 @@ fn read_digit_at_offset(
 }
 fn read_number(vec: &Vec<Vec<Slot>>, x: usize, y: usize) -> Option<usize> {
     let Some(&Slot::Didgit(did)) = check_slot(vec, x, y, 0, 0) else {
-       return None; 
+        return None;
     };
-    let mut str = did.to_string(); 
+    let mut str = did.to_string();
 
     let mut offset = -1;
     while let Some(&Slot::Didgit(did)) = check_slot(vec, x, y, offset, 0) {
