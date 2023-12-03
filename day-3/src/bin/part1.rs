@@ -1,5 +1,3 @@
-use std::num;
-
 fn main() {
     let input = include_str!("input.txt");
     let res: usize = process(input).iter().sum();
